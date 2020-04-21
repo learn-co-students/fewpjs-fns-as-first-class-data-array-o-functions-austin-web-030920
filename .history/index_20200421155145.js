@@ -28,8 +28,10 @@ function unleashDog(dogName, dogBreed) {
    
 }
 
-const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
+const routine = ["wakeDog", "leashDog", "walkToPark", "throwFrisbee", "walkHome", "unleashDog"]
 
 function exerciseDog(dogName, dogBreed) {
-    return routine.map(element => element(dogName, dogBreed));
+    routine.forEach(element => element(dogName, dogBreed)) 
+
+
 }
